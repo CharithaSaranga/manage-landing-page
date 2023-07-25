@@ -30,7 +30,7 @@
 
 <body>
   <div>
-    <nav class="navbar navbar-expand-lg bg-transparent container mt-5">
+    <nav class="navbar navbar-expand-lg bg-transparent  mt-5">
       <div class="container-fluid">
         <a class="navbar-brand ms-4" href="#"><img src="./images/logo.svg" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -258,16 +258,16 @@
             </div>
           
             <div class="col-md-3 container">
-              <form>
-                <div class="input-group">
-                  <input type="email" class="form-control me-3 form-content" style="border-radius: 50px; font-size: 11px;"
-                    placeholder=" Updates in your inbox">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary text-center px-3 form-content" id="form-btn" type="button"
-                      style="background-color: hsl(12, 88%, 59%); border: none; border-radius: 20px; font-size: 12px; padding-top: 13px; padding-bottom: 13px;">Go</button>
-                  </div>
-                </div>
-              </form>
+            <form id="newsletter-form" class="input-group">
+              <input type="email" id="email-input" class="form-control me-3 form-content"
+                style="border-radius: 50px; font-size: 11px;" placeholder="Updates in your inbox">
+              <div class="input-group-append">
+                <button class="btn btn-primary text-center px-3 form-content" id="form-btn" type="button"
+                  style="background-color: hsl(12, 88%, 59%); border: none; border-radius: 20px; font-size: 12px; padding-top: 13px; padding-bottom: 13px;">Go</button>
+              </div>
+            </form>
+            <div class="error-message" style="display: none; color: red; font-size: 12px;">Please enter a valid email address.</div>
+
         
             </div>
           </div>
